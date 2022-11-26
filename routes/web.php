@@ -17,14 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-
 Route::get('/checkout', function () {
     return view('checkout');
 })->name('checkout');
 
-Route::get('/sukses_checkout', function () {
+Route::get('/sukses-checkout', function () {
     return view('sukses_checkout');
 })->name('sukses_checkout');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
