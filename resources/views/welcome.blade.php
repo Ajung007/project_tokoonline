@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -90,7 +89,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="benefits">
         <div class="container">
